@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h4 {
+    font-family: 'Noto Serif', serif;
+}
