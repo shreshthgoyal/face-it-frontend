@@ -88,7 +88,7 @@ class App extends Component {
       .then(
         (response) => {
           if (response) {
-            fetch('http://localhost:3000/image', {
+            fetch('https://git.heroku.com/damp-journey-26415.git/image', {
               method: 'PUT',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({
