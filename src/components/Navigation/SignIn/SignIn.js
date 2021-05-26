@@ -21,7 +21,7 @@ class SignIn extends React.Component {
     }
 
     onSubmit = () => {
-        fetch('https://git.heroku.com/damp-journey-26415.git/signin', {
+        fetch('https://damp-journey-26415.herokuapp.com/signin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -31,8 +31,8 @@ class SignIn extends React.Component {
         })
             .then(response => response.json())
             .then(user => {
-                if (user[0].id) {
-                    this.props.loadUser(user[0]);
+                if (user.id) {
+                    this.props.loadUser(user);
                     this.props.onRoutechange('form');
                 }
             })
