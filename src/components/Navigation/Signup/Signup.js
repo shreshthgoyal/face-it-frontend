@@ -25,7 +25,7 @@ class Signup extends React.Component {
     }
     
     onSubmit = () => {
-        fetch('http://localhost:3000/signup',{
+        fetch('https://git.heroku.com/damp-journey-26415.git/signup',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
